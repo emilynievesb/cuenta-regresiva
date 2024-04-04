@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <script src="app.js" defer></script>
+        <title>Cuenta regresiva</title>
+    </head>
+    <body>
+        <section id="initial-screen" class="animation-initial-screen">
+            <h2>Selecciona la fecha y hora</h2>
+            <div>
+                <label for="date-input"><span>Fecha:</span></label>
+                <input type="date" id="date-input" />
+            </div>
+            <div>
+                <label for="time-input"><span>Hora:</span><label>
+                <input type="time" id="time-input" />
+            </div>
+            <button id="confirm-btn">Confirmar</button>
+        </section>
+
+        <section id="contador-container">
+            <h2>Cuenta regresiva...</h2>
+            <span>Faltan</span>
+            <div id="time-container">
+                <div class="card-container border">
+                    <span class="number" id="days">0</span>
+                    <span>días</span>
+                </div>
+                <div class="card-container border">
+                    <span class="number" id="hours">0</span>
+                    <span>horas</span>
+                </div>
+                <div class="card-container border">
+                    <span class="number" id="minutes">0</span>
+                    <span>minutos</span>
+                </div>
+                <div class="card-container">
+                    <span class="number" id="seconds">0</span>
+                    <span>segundos</span>
+                </div>
+            </div>
+        </section>
+        <section id="carusel-container">
+            <h2>Historia de JavaScript</h2>
+            <div id="carusel-slides">
+                <div id="marco">
+                    <button id="prevBtn" class="carusel-btn">&#8249;</button>
+                    <div id="content-slide">
+                        <img src="carusel/1.png" alt="Imagen 1" />
+                        <img src="carusel/2.png" alt="Imagen 2" />
+                        <img src="carusel/3.png" alt="Imagen 3" />
+                        <img src="carusel/4.png" alt="Imagen 4" />
+                        <img src="carusel/5.png" alt="Imagen 5" />
+                        <img src="carusel/6.png" alt="Imagen 6" />
+                        <img src="carusel/7.png" alt="Imagen 7" />
+                        <img src="carusel/8.png" alt="Imagen 8" />
+                    </div>
+                    <button id="nextBtn" class="carusel-btn">&#8250;</button>
+                </div>
+                <div id="next">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                    <span class="page-number">3</span>
+                    <span class="page-number">4</span>
+                    <span class="page-number">5</span>
+                    <span class="page-number">6</span>
+                    <span class="page-number">7</span>
+                    <span class="page-number">8</span>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
